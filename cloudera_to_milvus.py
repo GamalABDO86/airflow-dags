@@ -10,7 +10,7 @@ default_args = {
 with DAG(
     dag_id='cloudera_to_milvus_pipeline',
     default_args=default_args,
-    schedule_interval=None,
+    schedule=None,
     catchup=False,
     tags=['AI', 'Production'],
 ) as dag:
