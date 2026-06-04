@@ -9,7 +9,7 @@ default_args = {
 }
 
 with DAG(
-    dag_id='hive_to_milvus_pipeline',
+    dag_id='hive_and_minio_to_milvus_pipeline',
     default_args=default_args,
     schedule=None,     
     catchup=False,
